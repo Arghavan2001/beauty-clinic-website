@@ -18,6 +18,7 @@ h4{font-size: clamp(1.25rem, 2.25vw, 1.75rem );}
 h5{font-size: clamp(1.125rem, 1.8vw, 1.25rem);}
 h6{font-size: clamp(1rem, 1.5vw, 1.125rem);}
 p{font-size: clamp(0.875rem, 1.1vw, 1rem);}
+small{font-size: 0.8rem}
 button, input, label{font-size: clamp(0.875rem, 1vw, 1rem);}
 /* end font-size responsive */
 
@@ -100,6 +101,7 @@ header{
 .header{
     padding: 0 15px;
     background-color:white;
+    min-height: 6vh;
 }
 
 .header-right, .header-left{
