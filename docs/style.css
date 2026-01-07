@@ -619,6 +619,17 @@ footer a:hover{
 
 /* end footer */
 
+/* start copy righy */
+.copy-right{
+    background-color: rgb(60, 68, 92);
+   
+}
+
+.copy-right small{
+    color: rgb(199, 194, 194);
+}
+/* end copy righy */
+
 /* start about section */
 
 
