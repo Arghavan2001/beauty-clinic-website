@@ -1,6 +1,8 @@
 document.addEventListener('DOMContentLoaded', () => {
 
     //header moving
+
+    //get header height
     const header = document.querySelector('header');
 
     function getHeaderHeight() {
@@ -13,19 +15,31 @@ document.addEventListener('DOMContentLoaded', () => {
         headerHeight = getHeaderHeight();
     });
 
+     //get view port height
+     function viewHeight(){
+        return window.visualViewport.height;
+    }
+
+    let vp_height = viewHeight();
+    
+    window.addEventListener('resize',() => {
+        vp_height =viewHeight();
+    })
+
+
     window.addEventListener('scroll', () => {
         let scrollY = window.scrollY;
 
 
-        console.log(`${scrollY} and ${headerHeight}`);
-        if (scrollY <= headerHeight) {
-            header.classList.remove('trans');
+        
+        if (scrollY <= 0.8 * vp_height) {
+           
             header.style.top = `-${scrollY}px`;
-        } else {
+        } else  if(scrollY > 0.8 * vp_height){
 
-            console.log('scrolly > headerheigh')
+            
 
-            header.classList.add('trans')
+           
             header.style.top = `0`;
         }
 
