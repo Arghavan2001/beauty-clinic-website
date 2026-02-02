@@ -332,8 +332,14 @@ header {
 .hero-content {
     position: absolute;
     top: 50vh;
-    right: clamp(200px, 50vw, 1000px);
+    right: 50vw;
     margin-left: 15px;
+}
+
+@media (max-width: 768px){
+    .hero-content {
+    top: 30vh;
+    }
 }
 
 
