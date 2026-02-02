@@ -520,6 +520,7 @@ header {
 .btn-part a span {
     position: relative;
     z-index: 1000;
+    text-align: center;
 }
 
 /* end services */
